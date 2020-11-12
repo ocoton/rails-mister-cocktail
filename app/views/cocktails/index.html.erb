@@ -1,0 +1,11 @@
+<h1>All cocktails</h1>
+<br>
+<ul>
+  <% @cocktails.each do |cocktail| %>
+  <!-- yellow problem with my link to details page yellow -->
+    <li><%= link_to cocktail.name, cocktail_path(cocktail) %>
+  <% end %>
+</ul>
+
+   <%= link_to "create new cocktail", new_cocktail_path %>
+
