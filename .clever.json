@@ -1,0 +1,11 @@
+{
+  "apps": [
+    {
+      "app_id": "app_542d5772-55f3-4992-8468-6fd61aaa7e18",
+      "org_id": "user_44b83621-05ee-4e52-ab70-2670dd4ccec1",
+      "deploy_url": "https://push-par-clevercloud-customers.services.clever-cloud.com/app_542d5772-55f3-4992-8468-6fd61aaa7e18.git",
+      "name": "rails-mister-cocktail",
+      "alias": "rails-mister-cocktail"
+    }
+  ]
+}
