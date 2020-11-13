@@ -3,9 +3,14 @@
 <ul>
   <% @cocktails.each do |cocktail| %>
   <!-- yellow problem with my link to details page yellow -->
-    <li><%= link_to cocktail.name, cocktail_path(cocktail) %>
+    <% if cocktail.photo.attached? %>
+      <%= cl_image_tag cocktail.photo.key, height: 300, width: 400, crop: :fill %>
+    <% else  %>
+      <p> <%= cl_image_tag("32c2d2429ae6efb1368fcbf758d0e489_cazjnd",
+        width: 400, height: 300, crop: :fill) %> </p>
+    <% end  %>
+      <li><%= link_to cocktail.name, cocktail_path(cocktail) %>
   <% end %>
 </ul>
 
    <%= link_to "create new cocktail", new_cocktail_path %>
-
